@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-//import Header from './Layout/Header';
+import theme from './Styles/theme'
 import Template from './Layout/'
+import { ThemeProvider } from 'styled-components';
 
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <Template />
-      
-      
+      <ThemeProvider theme={theme}>
+         <Template />
+      </ThemeProvider> 
     );
   }
 }
