@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import { rgba } from 'polished';
 import styled from 'styled-components';
 
-const styledHeader = styled.header`
-    background: ${({ theme }) => theme.colors.black};
-    color: ${({ theme }) => theme.colors.white};
+const StyledHeader = styled.header`
+   
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
@@ -23,12 +22,12 @@ const StyledImg = styled.img`
 
 const StyledH1 = styled.h1`
   font-size: 20px;
-`;ç
+`;
 
 const Header = () => (
     <StyledHeader>
         <StyledH1>
-            Hola
+            Juan Foncuberta
         </StyledH1>
     </StyledHeader>
 )
