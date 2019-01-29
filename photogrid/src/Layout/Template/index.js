@@ -4,6 +4,7 @@ import { normalize } from 'polished';
 
 import Header from '../Header';
 import Body from '../Body';
+import Footer from '../Footer';
 
 
 // eslint-disable-next-line
@@ -23,6 +24,7 @@ const Template = ({children}) => (
         <Body>
             {children}
         </Body>
+        <Footer />
     </StyledWrapped>
 );
 
