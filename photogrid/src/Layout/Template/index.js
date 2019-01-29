@@ -5,9 +5,11 @@ import { normalize } from 'polished';
 import Header from '../Header';
 import Body from '../Body';
 
-injectGlobal`
+
+// eslint-disable-next-line
+/* injectGlobal`
     ${normalize()}
-`;
+`; */
 
 const StyledWrapped = styled.div`
     display: flex;
@@ -23,3 +25,5 @@ const Template = ({children}) => (
         </Body>
     </StyledWrapped>
 );
+
+export default Template;
