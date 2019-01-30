@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import { rgba } from 'polished';
 import styled from 'styled-components';
 
@@ -13,12 +13,6 @@ const StyledHeader = styled.header`
     border-bottom: 1px solid #000;
     box-shadow: 0 1px 0 ${rgba('#fff', 0.2)};
     position: relative;
-`;
-
-const StyledImg = styled.img`
-  display: inline-block;
-  width: 60px;
-  height: 60px;
 `;
 
 const StyledH1 = styled.h1`

@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import { rgba } from 'polished';
 import styled from 'styled-components';
 
@@ -15,11 +15,6 @@ const StyledFooter = styled.footer`
     position: relative;
 `;
 
-const StyledImg = styled.img`
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-`;
 
 const StyledH1 = styled.h1`
   font-size: 20px;
