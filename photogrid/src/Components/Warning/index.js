@@ -4,7 +4,8 @@ import Box from '../Box';
 import styled from 'styled-components';
 
 
-const StyledWarning = styled.div``;
+const StyledWarning = styled.div`
+flex:1`;
 
  const Warning = ({ children }) => (
     <StyledWarning>

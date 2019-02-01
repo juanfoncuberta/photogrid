@@ -23,13 +23,9 @@ const Template = ({children}) => (
     <StyledWrapped>
         <Header />
         <Body>
-           
             {children}
-        </Body>
-        
-       
+        </Body>       
         <Footer />
-
     </StyledWrapped>
 );
 

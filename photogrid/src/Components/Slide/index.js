@@ -7,23 +7,21 @@ import {
     Text
   } from 'rebass'
 
+const Slide = ({imagePath, title, text, onClick}) => (
 
-const img = 'https://source.unsplash.com/random/1280x720';
-const Slide = ({imagePath}) => (
-
-    <Box width={256}>
-  {imagePath}
+    <Box width={256} >
   <Card
     p={1}
+    bg='#f6f6ff'
     borderRadius={2}
-    boxShadow='0 0 16px rgba(0, 0, 0, .25)'>
-    <Image src={img} />
+    boxShadow='0 0 16px rgba(1, 1, 1, 1)'>
+    <Image src={imagePath} />
     <Box px={2}>
       <Heading as='h3'>
-        Card
+        { title }
       </Heading>
       <Text fontSize={0}>
-        Small meta text
+       { text }
       </Text>
     </Box>
   </Card>
