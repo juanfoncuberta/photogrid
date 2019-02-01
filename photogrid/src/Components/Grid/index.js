@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 
 
-const boardValue = [[{id:0,src:'https://source.unsplash.com/random/1280x720',title:'Title1',text: 'Music'},
+const boardValue = [[{id:0,src:'https://source.unsplash.com/random/1280x720',title:'Title0',text: 'Music'},
                     {id:1,src:'https://source.unsplash.com/random/1280x720',title:'Title1',text: 'Sport'},
                     {id:2,src:'https://source.unsplash.com/random/1280x720',title:'Title2',text: 'Travel'}],
                     [{id:3,src:'https://source.unsplash.com/random/1280x720',title:'Title3',text: 'Food'},
@@ -17,7 +17,6 @@ const boardValue = [[{id:0,src:'https://source.unsplash.com/random/1280x720',tit
  
 const StyledFlex = styled.div`
         background: linear-gradient(#fff,#eee);
-
         flexDirection:"column",
         justifyContent:'space-between'
 `;
@@ -30,7 +29,7 @@ const StyledFlex = styled.div`
 const MakeRow = function(rowValues,idRow,onClick){
     const row = [];
     rowValues.map((cellProps)=>
-            row.push(<Slide width={1/2} px={2} width={1/3} title={cellProps.title} imagePath={cellProps.src} text = {cellProps.text} key={cellProps.id} onClick={"alert('hola')"}  />)
+            row.push(<Slide  px={2} width={1/3} title={cellProps.title} imagePath={cellProps.src} text = {cellProps.text} key={cellProps.id} onClick={"alert('hola')"}  />)
     );
     return <Flex flexWrap='wrap' p="3" mx={4} key={idRow}>{row}</Flex>
 }

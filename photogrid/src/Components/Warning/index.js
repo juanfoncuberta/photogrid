@@ -5,7 +5,9 @@ import styled from 'styled-components';
 
 
 const StyledWarning = styled.div`
-flex:1`;
+    
+`;
+
 
  const Warning = ({ children }) => (
     <StyledWarning>
