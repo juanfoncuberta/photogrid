@@ -1,18 +1,14 @@
 import React from 'react';
-//import PropTypes from 'prop-types';
+import { Flex, Box } from 'rebass';
 import { rgba } from 'polished';
 import styled from 'styled-components';
 
-const StyledHeader = styled.header`
+const StyledHeader = styled(Box)`
     background: ${({ theme }) => theme.colors.black};
     color: ${({ theme }) => theme.colors.white};
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    align-items: center;
     border-bottom: 1px solid #000;
     box-shadow: 0 1px 0 ${rgba('#fff', 0.2)};
-    position: relative;
+    
 `;
 
 const StyledH1 = styled.h1`
@@ -20,10 +16,17 @@ const StyledH1 = styled.h1`
 `;
 
 const Header = () => (
-    <StyledHeader>
+    <StyledHeader p={3}>
+        <Flex justifyContent= {'space-between'} alignItems="center " >
         <StyledH1>
             Juan Foncuberta
         </StyledH1>
+        <div>
+           Subscribe | Submit | About 
+        </div>
+        
+
+        </Flex>
     </StyledHeader>
 )
 
