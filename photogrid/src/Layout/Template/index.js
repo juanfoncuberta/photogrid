@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Header from '../Header';
 import Body from '../Body';
 import Footer from '../Footer';
-import Slide from '../../Components/Slide'
+import { BrowserRouter } from 'react-router-dom';
 
 
 // eslint-disable-next-line
