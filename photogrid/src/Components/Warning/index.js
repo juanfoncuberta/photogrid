@@ -5,11 +5,11 @@ import styled from 'styled-components';
 
 
 const StyledWarning = styled.div`
-    
+
 `;
 
 
- const Warning = ({ children }) => (
+ const Warning = () => (
     <StyledWarning>
         <Wrapper>
             <Box>

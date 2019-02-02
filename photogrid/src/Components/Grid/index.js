@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 
 const boardValue = [[{id:0,src:'https://source.unsplash.com/random/1280x720',title:'Title0',text: 'Music'},
-                    {id:1,src:'https://source.unsplash.com/random/1280x720',title:'Title1',text: 'Sport'},
+                    {id:1,src:'https://source.unsplash.com/random/1280x720',title:'Title13',text: 'Sport'},
                     {id:2,src:'https://source.unsplash.com/random/1280x720',title:'Title2',text: 'Travel'}],
                     [{id:3,src:'https://source.unsplash.com/random/1280x720',title:'Title3',text: 'Food'},
                     {id:4,src:'https://source.unsplash.com/random/1280x720',title:'Title4',text: 'Tech'},
@@ -22,7 +22,7 @@ const StyledFlex = styled.div`
 `;
                                    
  const Grid = ({gridValue,onClick}) => ( 
-    boardValue.map((row,idRow) => 
+    gridValue.map((row,idRow) => 
         MakeRow(row,idRow,onClick)     
     )
 );

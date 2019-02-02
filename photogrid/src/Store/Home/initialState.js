@@ -1,5 +1,5 @@
 export default {
-    alertVisible: true,
+    warningVisible: true,
     gridValue : [[{id:0,src:'https://source.unsplash.com/random/1280x720',title:'Title0',text: 'Music'},
                     {id:1,src:'https://source.unsplash.com/random/1280x720',title:'Title13',text: 'Sport'},
                     {id:2,src:'https://source.unsplash.com/random/1280x720',title:'Title2',text: 'Travel'}],
