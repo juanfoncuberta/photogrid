@@ -18,6 +18,7 @@ font-size: 20px;
 margin-right: 20px;
   text-decoration: none;
   text-transform: uppercase;
+ 
   :hover{
     border-bottom: 2px solid ${({ theme }) => theme.colors.white};
   }
@@ -37,10 +38,10 @@ const Header = () => (
             <StyledLink to="/">
                 Subscribe
             </StyledLink>
-            <StyledLink to="/">
+            <StyledLink to="/sumbit">
                 Submit
             </StyledLink>
-            <StyledLink to="/">
+            <StyledLink to="/about">
                 About
             </StyledLink>
         </Box>
