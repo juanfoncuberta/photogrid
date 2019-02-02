@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Warning, Grid } from '../../Components'
 import { Box } from 'rebass';
-import { connect } from 'react-redux';
 
 const StyledBody = styled(Box)`
     background: linear-gradient(#333,#000);
@@ -13,17 +12,12 @@ const StyledBody = styled(Box)`
     align-items: center;   
 `;
 
-const Body = ({ warningVisible, gridValue, onWarningClick, warningContent }) => (
+const Body = () => (
     <StyledBody p={3}>
-        {warningVisible ? <Warning onWarningClick = { onWarningClick } warningContent = { warningContent } /> : ''}
-        <Grid gridValue = { gridValue }/>
+        <Warning/>
+        <Grid/>
     </StyledBody>
 ); 
 
-const mapStateToProps = state =>({
-    warningVisible: state.home.warningVisible,
-    gridValue: state.home.gridValue,
-    warningContent: state.home.warningContent
 
-})
-export default connect(mapStateToProps)(Body);
+export default Body;

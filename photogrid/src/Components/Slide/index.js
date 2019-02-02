@@ -9,14 +9,14 @@ import {
 
 const Slide = ({imagePath, title, text, onClick}) => (
 
-   <Box width={256} >
+   <Box width={256} px="1" >
     <Card
       p={2}
       bg='#f6f6ff'
       borderRadius={2}
       boxShadow='0 0 16px rgba(1, 1, 1, 1)'>
       <Image src={imagePath} />
-      <Box px={3}>
+      <Box px={1}>
         <Heading as='h3'>
           { title }
         </Heading>

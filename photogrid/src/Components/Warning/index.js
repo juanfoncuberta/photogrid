@@ -4,28 +4,43 @@ import Box from '../Box';
 import styled from 'styled-components';
 import { Close } from 'styled-icons/material/Close';
 import { Heading,Text } from 'rebass';
+import { connect } from 'react-redux';
 
-const StyledWarning = styled.div``;
+const StyledWarning = styled.div`
+`;
 
 const StyledText = styled(Text)`
     padding: 5px;
+   
+    
 `;
 
-const StyledHeading = styled(Close)`
+const StyledClose = styled(Close)`
     padding-bottom: 10px;
+    position: relative;
 `;
 
 
- const Warning = ({ onWarningClick, warningContent }) => (
+ const Warning = ({ warningVisible,onWarningClick, warningContent }) => (
     <StyledWarning>
-        <Wrapper>
+        {warningVisible ? 
+            <Wrapper>
             <Box>
-                <StyledHeading size="18" onClick={onWarningClick}/>
+                <StyledClose size="18" onClick={onWarningClick}/>
                 <Heading as='h3'> { warningContent.title} </Heading>
-                <StyledText>{warningContent.text}</StyledText>
+                <StyledText fontSize={12}>{warningContent.text}</StyledText>
             </Box>
-        </Wrapper>   
+        </Wrapper>  :''
+    
+    
+        }
+         
     </StyledWarning>
  );
  
- export default Warning;
+ const mapStateToProps = state =>({
+    warningVisible: state.home.warningVisible,
+    warningContent: state.home.warningContent
+
+})
+export default connect(mapStateToProps)(Warning);

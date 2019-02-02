@@ -14,18 +14,18 @@ const StyledHeader = styled(Box)`
 
 const StyledLink = styled(NavLink)`
 color: ${({ theme }) => theme.colors.white};
-font-size: 20px;
+font-size: 15px;
 margin-right: 20px;
   text-decoration: none;
   text-transform: uppercase;
- 
+
   :hover{
     border-bottom: 2px solid ${({ theme }) => theme.colors.white};
   }
 `;
 
 const StyledTitle = styled.h1`
-  font-size: 20px;
+  font-size: 15px;
 `;
 
 const Header = () => (
