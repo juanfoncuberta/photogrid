@@ -13,15 +13,17 @@ const StyledBody = styled(Box)`
     align-items: center;   
 `;
 
-const Body = ({ warningVisible, gridValue }) => (
+const Body = ({ warningVisible, gridValue, onWarningClick, warningContent }) => (
     <StyledBody p={3}>
-        {warningVisible ? <Warning warningVisible = { warningVisible }/> : ''}
+        {warningVisible ? <Warning onWarningClick = { onWarningClick } warningContent = { warningContent } /> : ''}
         <Grid gridValue = { gridValue }/>
     </StyledBody>
 ); 
 
 const mapStateToProps = state =>({
     warningVisible: state.home.warningVisible,
-    gridValue: state.home.gridValue
+    gridValue: state.home.gridValue,
+    warningContent: state.home.warningContent
+
 })
 export default connect(mapStateToProps)(Body);
