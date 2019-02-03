@@ -1,7 +1,7 @@
 import { createStore } from 'redux';
 import rootReducer from './reducer';
 
-export { homeSet } from './actions';
+export { homeSet, homeSetWarningVisibile } from './actions';
 
 const store = createStore(
     rootReducer,
