@@ -20,14 +20,14 @@ const StyledClose = styled(Close)`
 `;
 
 
- const Warning = ({ warningVisible, warningContent }) => (
+ const Warning = ({ warningVisible, warningContent,onWarningClicked }) => (
     <StyledWarning>
-        {warningVisible ? 
+                {warningVisible ? 
             <Wrapper>
             <Box>
-                
+                <a onClick={onWarningClicked}>
                 <StyledClose size="18" />
-             
+                </a>
                 <Heading as='h3'> {warningContent.title} </Heading>
                 <StyledText fontSize={12}>{warningContent.text}</StyledText>
             </Box>

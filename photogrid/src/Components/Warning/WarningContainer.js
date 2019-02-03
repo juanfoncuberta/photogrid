@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Warning from './Warning';
+import { homeSet } from '../../Store'
 
 class WarningCointaner extends Component {
   state = {
-    warningVisible: this.props.warningVisible,
-    warningContent: this.props.warningContent,
+        warningVisible: this.props.warningVisible
   };
   static getDerivedStateFromProps({ warningVisible, warningContent }) {
     return {
@@ -13,12 +13,17 @@ class WarningCointaner extends Component {
         warningContent,
     };
   }
+  onWarningClicked = () => {  
+    this.state.warningVisible = false
+    this.props.homeSet(this.state)
+  }
 
   render() {
     return (
       <Warning
-      warningVisible={this.state.warningVisible}
+        warningVisible={this.state.warningVisible}
         warningContent={this.state.warningContent}
+        onWarningClicked={this.onWarningClicked}
 
       />
     );
@@ -27,7 +32,11 @@ class WarningCointaner extends Component {
 
 const mapStateToProps = state => ({
     warningContent: state.home.warningContent,
-  warningVisible: state.home.warningVisible
+    warningVisible: state.home.warningVisible
 });
 
-export default connect(mapStateToProps)(WarningCointaner);
+const mapDispatchToProps = {
+    homeSet
+}
+export default connect(mapStateToProps,mapDispatchToProps)(WarningCointaner);
+
