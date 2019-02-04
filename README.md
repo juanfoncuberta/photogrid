@@ -10,7 +10,7 @@ Clone the code.
 
 Access to the directory:
 
-	cd photogrid
+	cd photogrid/photogrid
 	
 * __Third step:__
 
