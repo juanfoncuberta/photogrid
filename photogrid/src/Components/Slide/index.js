@@ -15,14 +15,11 @@ const Slide = ({imagePath, title, text, onClick}) => (
       bg='#f6f6ff'
       borderRadius={2}
       boxShadow='0 0 16px rgba(1, 1, 1, 1)'>
-      <Image src={imagePath} />
+      <Image src={imagePath} height={'150px'} width={'250px'} />
       <Box px={1}>
         <Heading as='h3'>
           { title }
         </Heading>
-        <Text fontSize={0}>
-        { text }
-        </Text>
       </Box>
     </Card>
 </Box>
