@@ -1,5 +1,5 @@
 import React from 'react';
-//import PropTypes from 'prop-types';
+import { FooterGrid } from '../../Components';
 import { rgba } from 'polished';
 import styled from 'styled-components';
 
@@ -22,9 +22,7 @@ const StyledH1 = styled.h1`
 
 const Footer = () => (
     <StyledFooter>
-        <StyledH1>
-            This is the footer
-        </StyledH1>
+        <FooterGrid/>
     </StyledFooter>
 )
 
