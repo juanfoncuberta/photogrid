@@ -6,7 +6,7 @@ export default {
                     {id:2,src:'https://cdn.lifehack.org/wp-content/uploads/2016/02/23074830/Reading-before-bed.jpg',title:'Reading'}],
                     [{id:3,src:'https://data1.ibtimes.co.in/cache-img-0-450/en/full/656812/1501409145_happy-friendship-day-friendship-day.jpg',title:'Friendship'},
                     {id:4,src:'http://treasurestatelifestyles.com/wp-content/uploads/2017/05/6a00d83451dc5b69e201bb087309e5970d.png',title:'Art',},
-                    {id:5,src:'http://3.bp.blogspot.com/-0Oz57PX5hPw/UhvVv3RuLgI/AAAAAAAAAFc/kVtByFCkYkQ/s758/10529426-unidad-de-procesamiento-central-un-procesador-microchip-interconectados-recibir-y-enviar-informacion.jpg',title:'Tecnology'}],
+                    {id:5,src:'http://3.bp.blogspot.com/-0Oz57PX5hPw/UhvVv3RuLgI/AAAAAAAAAFc/kVtByFCkYkQ/s758/10529426-unidad-de-procesamiento-central-un-procesador-microchip-interconectados-recibir-y-enviar-informacion.jpg',title:'Technology'}],
                     [{id:6,src:'https://www.aiche.org/sites/default/files/images/webinar/global_chemicals-materials-food-spices-iStk.jpg',title:'Gastronomy',text:'Word 6'},
                     {id:7,src:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHcYkrcyU4bZiDk-SJo1b1qZfsyWp-0BjqDhGJEXgqtFHddLOsDQ',title:'Music'},
                     {id:8,src:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGfmqGditY5lWyud3tv_2TceBKugta9m7PG5B3Z3Z3jWoz8HnGfg',title:'Cinema'}]]
